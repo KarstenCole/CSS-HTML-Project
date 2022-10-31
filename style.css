@@ -1,0 +1,97 @@
+body{
+    margin: 0px;
+}
+#navbar{
+    background-color: rgb(37,37,38);
+    grid-column-end: -1;
+    grid-column-start: 1;
+    display:flex;
+    flex-direction: column;
+}
+#title{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#title > img{
+    width: 60px;
+    padding: 0 20px 0 20px;
+}
+.nav-item:hover{
+    background-color: rgb(64, 64, 65);
+}
+.nav-item > img{
+    width: 20px;
+}
+#main-page > h1{
+    text-align: center;
+    text-decoration: underline;
+}
+#main-page > p{
+    padding: 20px;
+}
+footer{
+    background-color: rgb(37,37,38);
+    grid-column-end: -1;
+    grid-column-start: 1;
+}
+@media screen and (min-width: 768px){
+    .wrapper{
+        display:grid;
+        grid-template-columns:minmax(700px, 7fr);
+        grid-template-rows: 163px minmax(700px, 7fr) minmax(100px, 1fr);
+    }
+    #nav-items{
+        background-color: rgb(33, 33, 33);
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-content: center;
+    }
+    #nav-items>.nav-item{
+        color: white;
+        text-align: center;
+        padding:41px;
+        border-style:solid;
+        border-width: 1px;
+        border-color:rgb(55, 55, 59);
+        border-radius: 5px;
+    }
+    #main-page{
+        background-color: rgb(55, 55, 59);
+        color: white;
+        padding: 50px 100px 50px 100px;
+        line-height: 35px;
+    }
+}
+@media screen and (max-width: 768px){
+    .wrapper{
+        display:grid;
+        grid-template-columns: 7fr;
+        grid-template-rows: 1fr minmax(700px, 7fr) minmax(100px, 1fr);
+    }
+    #nav-items{
+        background-color: rgb(33, 33, 33);
+        display:grid;
+        align-content: center;
+    }
+    #nav-items>.nav-item{
+        color: white;
+        text-align: center;
+        vertical-align: top;
+        padding:26px;
+        border-style:solid;
+        border-width: 1px;
+        border-color:rgb(55, 55, 59);
+        border-radius: 5px;
+    }
+    #main-page{
+        background-color: rgb(55, 55, 59);
+        color: white;
+        padding: 50px 30px 50px 30px;
+        line-height: 35px;
+    }
+}
