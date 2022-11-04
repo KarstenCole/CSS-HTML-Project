@@ -38,6 +38,9 @@ body{
 #main-page > p{
     padding: 20px;
 }
+#main-page > p > a{
+    color: white;
+}
 footer{
     background-color: rgb(37,37,38);
     grid-column-end: -1;
