@@ -58,11 +58,11 @@ footer > a{
     color: white;
     padding: 3em;
 }
+
 @media screen and (min-width: 768px){
     .wrapper{
         display:grid;
-        grid-template-columns:minmax(700px, 7fr);
-        grid-template-rows: 163px minmax(700px, 7fr) minmax(100px, 1fr);
+        grid-template-rows: 163px 1fr 165px;
     }
     #nav-items{
         background-color: rgb(33, 33, 33);
@@ -86,11 +86,11 @@ footer > a{
         line-height: 35px;
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (width < 768px){
     .wrapper{
         display:grid;
-        grid-template-columns: 7fr;
-        grid-template-rows: 1fr minmax(700px, 7fr) minmax(100px, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-rows: 351px 1fr 165px;
     }
     #nav-items{
         background-color: rgb(33, 33, 33);
