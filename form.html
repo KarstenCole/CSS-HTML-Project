@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="navbar">
+            <div id="title">
+                <!-- img of a guitar here -->
+                <img src="images/guitar.png"> 
+                <p>Guitar lessons</p> 
+                <img src="images/guitar.png"> 
+            </div>
+            <!-- nav bar -->
+            <div id="nav-items">
+                <a href="index.html"class="nav-item">
+                    <img id="img" src="images/home.png">
+                </a>
+                <a href="Theory.html"class="nav-item">THEORY</a>
+                <a href="Chords.html"class="nav-item">CHORDS</a>
+                <a href="Scales.html"class="nav-item">SCALES</a>
+            </div>
+        </div>
+        <div id="main-page" class="form">
+            <!-- here is the styled feedback form -->
+            <form method="GET">
+                <!-- fname -->
+                <div>
+                    <label for="fname">First name:</label>
+                    <input type="text" for="fname" name="fname" placeholder="JiQuan" required>
+                </div>
+                <br>
+                <!-- lname -->
+                <div>
+                    <label for="lname">Last name:</label>
+                    <input type="text" for="lname" name="lname" placeholder="DeMarkus" required>
+                </div>
+                <br>
+                <!-- date -->
+                <div>
+                    <label for="bdate">Date of Feedback:</label>
+                    <input type="date" id="bdate" name="bdate">
+                </div>
+                <br>
+                <!-- rating dropdown-->
+                <div>
+                    <label for="title">How would you rate my website:</label>
+
+                    <select id="rating" name="rating">
+                        <option value="Bad">Bad</option>
+                        <option value="Needs Work">Needs Work</option>
+                        <option value="Ok">Ok</option>
+                        <option value="Good">Good</option>
+                        <option value="Great">Great</option>
+                    </select>
+                </div>
+                <br>
+                <!-- extra information -->
+                <div>
+                    <label for="xInfo">Anything extra that you wanted to say:</label><br>
+                    <input type="text" for="lname" name="lname">               
+                </div>
+                <br>
+                <!-- reset and submit buttons -->
+                <div>
+                    <input type="reset">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+        <!-- footer with the form and extra info -->
+        <footer>
+            <p>
+                <big>CONTACT:</big> <br> EMAIL: ex@gmail.com <br> PHONE: (123)456-789 <br> 
+            </p>
+            <p>
+                <big>Good YouTube Channels:</big> <br> <a href="https://www.youtube.com/watch?v=rgaTLrZGlk0&ab_channel=ANDREWHUANG">Learn music theory in half an hour.
+                </a> <br> <a href="https://www.youtube.com/watch?v=Yb4ajV0C1BE&ab_channel=KurtBerg-5MinuteGuitar">How To Read Guitar Tabs (Beginner Guide - ALL SYMBOLS)</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

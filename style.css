@@ -1,6 +1,9 @@
 body{
     margin: 0px;
 }
+
+/* header css */
+
 #navbar{
     background-color: rgb(37,37,38);
     grid-column-end: -1;
@@ -31,6 +34,9 @@ body{
     width: 35px;
     height: 1em;
 }
+
+/* Main page css */
+
 #main-page > h1{
     text-align: center;
     text-decoration: underline;
@@ -59,6 +65,10 @@ body{
     padding:100px 0 0 0;
     height: 150px;
 }
+#strumming{
+    height: 100px;
+    margin-top:50px;
+}
 #main-page > p > #list{
     padding: 0 20px 0 20px;
     margin: 0;
@@ -70,10 +80,60 @@ table,.header-row,th{
     border: 3px solid;
     border-color:rgb(89, 89, 89);
     border-collapse:collapse;
+    padding: 0 50px 0 50px;
+}
+.header-row{
+    background-color: rgb(89, 89, 89);
+
+}
+table > h3{
+    font-size: 20px;
 }
 #SheetMusic{
     height: 140px;
 }
+#photo-gallery{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-flow:dense;
+    grid-gap:10px;
+    margin:auto;
+    padding: 70px 70px 70px 70px;
+    border: 7px solid;
+    border-color: rgb(108, 108, 108);
+}
+.basic-photo{
+    grid-column: span 1;
+    grid-row: span 1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.wide-photo{
+    grid-column: span 2;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.tall-photo{
+    grid-row: span 2;
+    grid-column: span 2;
+
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.big-photo{
+    grid-row: span 2;
+    grid-column: span 2;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer css */
+
 footer{
     background-color: rgb(37,37,38);
     grid-column-end: -1;
@@ -91,6 +151,8 @@ footer > a{
     color: white;
     padding: 3em;
 }
+
+/* css for wide screen */
 
 @media screen and (min-width: 768px){
     .wrapper{
@@ -128,6 +190,9 @@ footer > a{
         transform: rotate(90deg);
     }
 }
+
+/* css for small screens */
+
 @media screen and (width < 768px){
     .wrapper{
         display:grid;
@@ -164,3 +229,33 @@ footer > a{
         padding: 0;
     }
 }
+
+/* css for form */
+
+
+form{
+    font-size: 16px;
+    text-align: center;
+}
+input{
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: rgb(89, 89, 89);
+    border: solid 2px rgb(55, 55, 59);
+    color: white;
+    font-size: 16px;
+    justify-content: center;
+}
+select{   
+    width: 160px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: rgb(89, 89, 89);
+    border: solid 2px rgb(55, 55, 59);
+    color: white;
+    font-size: 16px;    
+}
+
