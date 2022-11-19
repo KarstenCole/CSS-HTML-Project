@@ -29,7 +29,7 @@
         <div id="main-page" class="form">
             <!-- here is the styled feedback form -->
             <form 
-            method="GET"
+            method="POST"
             action="https://formspree.io/f/mdojjabe"
             >
                 <!-- fname -->
@@ -47,14 +47,14 @@
                 <!-- date -->
                 <div>
                     <label for="bdate">Date of Feedback:</label>
-                    <input type="date" id="bdate" name="bdate">
+                    <input type="date" id="bdate" name="bdate" required>
                 </div>
                 <br>
                 <!-- rating dropdown-->
                 <div>
                     <label for="title">How would you rate my website:</label>
 
-                    <select id="rating" name="rating">
+                    <select required id="rating" name="rating">
                         <option value="Bad">Bad</option>
                         <option value="Needs Work">Needs Work</option>
                         <option value="Ok">Ok</option>
@@ -66,7 +66,7 @@
                 <!-- extra information -->
                 <div>
                     <label for="xInfo">Anything extra that you wanted to say:</label><br>
-                    <input type="text" for="lname" name="lname">               
+                    <input type="text" for="xInfo" name="xInfo" required>               
                 </div>
                 <br>
                 <!-- reset and submit buttons -->
